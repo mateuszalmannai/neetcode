@@ -19,6 +19,11 @@ public class Answer {
     return count;
   }
 
+  /**
+   * Remove the periods
+   * Separate the string into words
+   * Filter for matching words
+   */
   static int getStreamedOccurences(String source, String word) {
     String cleanedUpString = source.replaceAll("\\.", "");
     return (int) Arrays.stream(cleanedUpString.split(" "))
